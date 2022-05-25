@@ -24,12 +24,12 @@ public class CinemachineSwitcher : MonoBehaviour
         if (ActiveCamera)
         {
             vcam1.Priority = 0;
-            vcam1.Priority = 1;
+            vcam2.Priority = 1;
         }
         else
         {
             vcam1.Priority = 1;
-            vcam1.Priority = 0;
+            vcam2.Priority = 0;
         }
         ActiveCamera = !ActiveCamera;
         StartCoroutine(WaitFor(tiempo));
